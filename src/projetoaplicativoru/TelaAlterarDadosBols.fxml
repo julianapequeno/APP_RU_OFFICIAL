@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoaplicativoru.TelaAlterarDadosBolsController">
+   <children>
+      <ImageView fx:id="fundo" fitHeight="433.0" fitWidth="660.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/fundo%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fundoAzul2" fitHeight="383.0" fitWidth="273.0" layoutX="65.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/plane.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fundoClaro" fitHeight="383.0" fitWidth="273.0" layoutX="325.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/plane.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Titulo" layoutX="229.0" layoutY="56.0" text="Alterar Dados" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iconeAdd" fitHeight="37.0" fitWidth="68.0" layoutX="184.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/Bixinho.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelNome" alignment="CENTER" layoutX="122.0" layoutY="129.0" text="Nome:" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="labelEmail" alignment="CENTER" layoutX="125.0" layoutY="160.0" prefHeight="17.0" prefWidth="36.0" text="Email:" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="labelCPF" alignment="CENTER" layoutX="132.0" layoutY="190.0" text="CPF:" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="labelLogin" alignment="CENTER" layoutX="126.0" layoutY="222.0" text="Login:" textAlignment="CENTER" textFill="WHITE" />
+      <ImageView fx:id="fundoMsg" fitHeight="37.0" fitWidth="379.0" layoutX="197.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/sla.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelSenha" alignment="CENTER" layoutX="126.0" layoutY="259.0" text="Senha:" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="labelConfirmaSenha" alignment="CENTER" layoutX="81.0" layoutY="291.0" text="Confirmar Senha:" textAlignment="CENTER" textFill="WHITE" />
+      <TextField fx:id="email" layoutX="218.0" layoutY="157.0" prefHeight="25.0" prefWidth="335.0" promptText="Digite seu Email..." style="-fx-background-color: #0E4194; -fx-text-fill: #ffffff;" />
+      <ImageView fx:id="fundoNome" fitHeight="90.0" fitWidth="379.0" layoutX="196.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/sla2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Nome" layoutX="218.0" layoutY="125.0" prefHeight="17.0" prefWidth="335.0" promptText="Digite seu nome..." style="-fx-background-color: #0E4194; -fx-text-fill: #ffffff;" />
+      <ImageView fx:id="fundoCpf" fitHeight="43.0" fitWidth="379.0" layoutX="196.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/CPF.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="cpf" layoutX="220.0" layoutY="190.0" prefHeight="25.0" prefWidth="348.0" promptText="Digite seu CPF..." style="-fx-background-color: #0E4194; -fx-text-fill: #ffffff;" />
+      <ImageView fx:id="fundoLogin" fitHeight="43.0" fitWidth="379.0" layoutX="196.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/LOGINN.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="login" layoutX="220.0" layoutY="221.0" prefHeight="25.0" prefWidth="348.0" promptText="Digite o seu login (entre 3 e 12 caracteres)...." style="-fx-background-color: #0E4194; -fx-text-fill: #ffffff;" />
+      <ImageView fx:id="fundoSenha" fitHeight="73.0" fitWidth="379.0" layoutX="196.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/SENHAADWF.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="senha" layoutX="221.0" layoutY="254.0" prefHeight="25.0" prefWidth="342.0" promptText="Digite uma senha..." style="-fx-background-color: #0E4194; -fx-text-fill: #FFFFFF;" />
+      <ImageView fx:id="fundoConfirmar" fitHeight="111.0" fitWidth="379.0" layoutX="196.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/confirmar.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="senhaConferir" layoutX="221.0" layoutY="287.0" prefHeight="25.0" prefWidth="342.0" promptText="Confirme sua senha..." style="-fx-background-color: #0E4194; -fx-text-fill: #FFFFFF;" />
+      <Button fx:id="voltar" layoutX="111.0" layoutY="345.0" mnemonicParsing="false" onAction="#Voltar" style="-fx-background-color: #0E4194; -fx-text-fill: #FFFFFF;" text="VOLTAR" textAlignment="CENTER" />
+      <Button fx:id="enviarDados" layoutX="197.0" layoutY="344.0" mnemonicParsing="false" onAction="#EnviarRegistro" prefHeight="25.0" prefWidth="379.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #0E4194;" text="ENVIAR" textAlignment="CENTER" />
+      <Button fx:id="botao" layoutX="501.0" layoutY="61.0" mnemonicParsing="false" opacity="0.0" text="Button" />
+   </children>
+</AnchorPane>

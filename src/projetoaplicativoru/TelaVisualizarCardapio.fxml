@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoaplicativoru.TelaVisuCardapioController">
+   <children>
+      <ImageView fitHeight="425.0" fitWidth="643.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/fundo%20(3).png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="425.0" prefWidth="643.0">
+         <top>
+            <Pane prefHeight="28.0" prefWidth="606.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" layoutX="133.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/CARDAPIo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="185.0" layoutY="8.0" prefHeight="43.0" prefWidth="348.0" text="Visualizar Cardápio" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="visuCardapio" layoutX="-97.0" layoutY="32.0" prefHeight="321.0" prefWidth="589.0" style="-fx-background-color: #418FDE;">
+                    <columns>
+                        <TableColumn fx:id="cp" prefWidth="65.0" text="CP" />
+                      <TableColumn fx:id="lancheManha" prefWidth="133.0" text="Lanche" />
+                        <TableColumn fx:id="almoco" prefWidth="87.0" text="Almoço" />
+                        <TableColumn fx:id="lancheTarde" text="Lanche" />
+                        <TableColumn fx:id="janta" prefWidth="130.0" text="Janta" />
+                        <TableColumn fx:id="ceia" prefWidth="93.0" text="Lanche" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="atualizarCP" layoutX="50.0" layoutY="359.0" prefHeight="25.0" prefWidth="231.0" promptText="Digite o CP a ser atualizado" />
+                  <Button layoutX="281.0" layoutY="359.0" mnemonicParsing="false" onAction="#atualizarCpTela" style="-fx-background-color: #0e4291; -fx-text-fill: #ffffff;" text="Atualizar" />
+                  <Button fx:id="voltar" layoutX="422.0" layoutY="359.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #0E4194;" text="Voltar" textFill="WHITE" />
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane prefHeight="385.0" prefWidth="124.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="botao" layoutX="62.0" mnemonicParsing="false" opacity="0.0" text="Button" />
+                  <Button fx:id="apagar" layoutX="27.0" layoutY="359.0" mnemonicParsing="false" onAction="#removerItem" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #0E4194;" text="Apagar" textFill="WHITE" />
+               </children></Pane>
+         </left>
+         <right>
+            <Pane prefHeight="385.0" prefWidth="43.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="12.0" prefWidth="643.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

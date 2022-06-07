@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoaplicativoru.TelaQuemSomosBController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="679.0" layoutX="-3.0" layoutY="-15.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/fundo%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="413.0" fitWidth="604.0" layoutX="51.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/fundo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="voltar" layoutX="233.0" layoutY="386.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="21.0" prefWidth="210.0" style="-fx-background-color: #0E4291; -fx-border-color: #0E4291;" text="Voltar" textAlignment="CENTER" textFill="WHITE" />
+      <Text fx:id="nomeSu" fill="WHITE" layoutX="119.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ScrumMaster">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nomeJu" fill="WHITE" layoutX="115.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programadora">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nomeAn" fill="WHITE" layoutX="484.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analista" wrappingWidth="55.2958984375">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nomePe" fill="WHITE" layoutX="481.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designer">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="ftSuellen" fitHeight="129.0" fitWidth="136.0" layoutX="117.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/sull.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ftJuliana" fitHeight="129.0" fitWidth="122.0" layoutX="116.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/ju.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ftAndrelyne" fitHeight="129.0" fitWidth="123.0" layoutX="465.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/lyne.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ftPedro" fitHeight="129.0" fitWidth="159.0" layoutX="464.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/pedro%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="instaJu" fill="WHITE" layoutX="101.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@julianasantiago._">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="instaSu" fill="WHITE" layoutX="137.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@suhllrl">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="instaPe" fill="WHITE" layoutX="427.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@pedrolucasolintomoura">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="instaAndre" fill="WHITE" layoutX="468.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@andrelynev">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nomeAde" fill="WHITE" layoutX="301.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orientador">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="instaAde" fill="WHITE" layoutX="295.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@aafavelino">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="ftAdelino" fitHeight="129.0" fitWidth="102.0" layoutX="286.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/adelino.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="botao" layoutX="304.0" layoutY="40.0" mnemonicParsing="false" opacity="0.0" text="Button" />
+   </children>
+</AnchorPane>

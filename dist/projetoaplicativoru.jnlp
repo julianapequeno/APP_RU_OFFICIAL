@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="projetoaplicativoru.jnlp">
+  <information>
+    <title>projetoaplicativoru</title>
+    <vendor>Aluno</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\java-json.jar" size="84697" download="eager" />
+    <jar href="lib\postgresql-42.1.1.jre6.jar" size="707647" download="eager" />
+    <jar href="projetoaplicativoru.jar" size="1212510" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="projetoaplicativoru" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="projetoaplicativoru.ProjetoAplicativoRU"  name="projetoaplicativoru" />
+  <update check="always"/>
+</jnlp>
